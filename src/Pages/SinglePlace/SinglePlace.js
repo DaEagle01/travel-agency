@@ -21,9 +21,6 @@ const SinglePlace = (props) => {
                       alt="images given"
                     />
                     <div class="px-4 py-2">
-                      {/* <h1 class="text-xl font-gray-700 font-bold">
-                        Papież gigant
-                      </h1> */}
                       <div class="flex space-x-2 mt-2">
                         <span>
                           <svg
@@ -67,23 +64,9 @@ const SinglePlace = (props) => {
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
-      {/* <div class="col text-start">
-        <div class="card h-100">
-          <img
-            src={img}
-            style={{ height: "320px" }}
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h6 class="card-title">{name}</h6>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
