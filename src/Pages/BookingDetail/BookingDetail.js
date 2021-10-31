@@ -39,8 +39,14 @@ const BookingDetail = () => {
 
   return (
     <div className="container">
-      <h1>Hello, {user?.displayName}</h1>
-      <h1> {user?.email}</h1>
+      <div className="row">
+        <div className="col-md-6"></div>
+        <div className="col-md-6 mx-auto text-center">
+          {" "}
+          <h5>Hello, {user?.displayName}</h5>
+          <h5> {user?.email}</h5>
+        </div>
+      </div>
       <div className="row">
         <div className="col-md-6">
           <div>
@@ -59,12 +65,6 @@ const BookingDetail = () => {
               placeholder="Your Full Name"
               className="border border-dark rounded-3 p-1"
             />
-            {/* <input
-              {...register("email")}
-              // value={user?.email}
-              placeholder="Your Email"
-              className="border border-dark rounded-3 p-1"
-            /> */}
             <input
               type="number"
               {...register("number")}

@@ -23,7 +23,7 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
 
-          <Navbar.Collapse className="justify-content-end">
+          <Navbar.Collapse className="justify-content-end text-center">
             <Nav
               className="mx-auto my-2 my-lg-0 justify-content-end"
               navbarScroll
@@ -49,8 +49,6 @@ const Header = () => {
                 <a href="#nothing"></a>
               )}
 
-              
-
               <Link className="nav-bar text-primary mx-2 text-dark" to="/about">
                 About
               </Link>
@@ -64,16 +62,22 @@ const Header = () => {
 
             <Navbar.Text className="ps-5">
               {user?.displayName || user?.email ? (
-                <Link to="/login" onClick={logOut} className="btn btn-info">
+                <Link
+                  to="/login"
+                  onClick={logOut}
+                  className="btn btn-info font-bold"
+                >
                   Logout
                 </Link>
               ) : (
-                <Link to="/login" className="btn btn-info">
+                <Link to="/login" className="btn btn-info font-bold">
                   Login
                 </Link>
               )}
+            </Navbar.Text>
+            <Navbar.Text className="ps-2">
               {user?.displayName || user?.email ? (
-                <p className="fw-bold">{user?.displayName}</p>
+                <p className="text-dark fw-bold pt-3">{user?.displayName}</p>
               ) : (
                 <a href="#nothing"></a>
               )}
