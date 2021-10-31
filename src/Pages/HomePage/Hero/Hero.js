@@ -9,286 +9,86 @@ const Hero = () => {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+
   return (
     <div>
-      <div className="container">
-        <Carousel className="container">
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              style={{ height: "450px" }}
-              src="https://image.freepik.com/free-photo/beautiful-tropical-beach-sea-sand-with-coconut-palm-tree-blue-sky-white-cloud_74190-7479.jpg"
-              alt="First slide"
-            />
-            <Carousel.Caption className="text-dark ">
-              <h3 className="fw-bold">Combining excellence and expertise</h3>
-              <p>
-                Our hospitals excel in most aspects of medicine and offer a wide
-                range of diagnostic and treatment services, some have been
-                awarded an 'Outstanding' quality check by the Care Quality
-                Commission.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              style={{ height: "450px" }}
-              src="https://image.freepik.com/free-photo/beautiful-tropical-beach-sea-sand-with-coconut-palm-tree-blue-sky-white-cloud_74190-7479.jpg"
-              alt="Second slide"
-            />
-
-            <Carousel.Caption className="text-dark">
-              <h3 className="fw-bold">
-                Our services are delivered by highly-skilled professional
-              </h3>
-              <p>
-                We have intensive care facilities in all of our hospitals, and
-                dedicated and expert teams to look after you no matter what
-                happens.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              style={{ height: "450px" }}
-              src="https://image.freepik.com/free-photo/beautiful-tropical-beach-sea-sand-with-coconut-palm-tree-blue-sky-white-cloud_74190-7479.jpg"
-              alt="Third slide"
-            />
-
-            <Carousel.Caption className="text-dark">
-              <h3 className="fw-bold">
-                Our hospital provides 24/7 hour service
-              </h3>
-              <p>
-                Our hospitals, clinics, outpatient and diagnostics centres, and
-                NHS partnerships cover all areas of medicine, including complex
-                conditions in both adults and children.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <div>
-        {/* <section class="ftco-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h2 class="heading-section mb-5">Carousel #06</h2>
-            </div>
-            <div class="col-md-12">
-              <div class="featured-carousel owl-carousel">
-                <div class="item">
-                  <div class="work-wrap d-md-flex">
-                    <div
-                      class="img order-md-last carousel-bg1"
-                     
-                    ></div>
-                    <div
-                      class="
-                      text text-left text-lg-right
-                      p-4
-                      px-xl-5
-                      d-flex
-                      align-items-center
-                    "
-                    >
-                      <div class="desc w-100">
-                        <h2 class="mb-4">
-                          Define <br />
-                          Your Budget
-                        </h2>
-                        <p class="h5">Call: 0123 456 78901</p>
-                        <p class="h5 mb-4">Email Address: email@info.com</p>
-                        <div class="row justify-content-end">
-                          <div class="col-xl-8">
-                            <p>
-                              Far far away, behind the word mountains, far from
-                              the countries Vokalia and Consonantia, there live
-                              the blind texts. Separated they live in
-                              Bookmarksgrove right at the coast of the
-                              Semantics, a large language ocean.
-                            </p>
-                          </div>
-                        </div>
-                        <p>
-                          <button
-                            type="button"
-                            class="btn btn-outline-dark mb-2 py-3 px-4"
-                          >
-                            Shop the collection Outline
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-dark mb-2 py-3 px-4"
-                          >
-                            Learn More
-                          </button>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work-wrap d-md-flex">
-                    <div
-                      class="img order-md-last carousel-bg2"
-                      
-                    ></div>
-                    <div
-                      class="
-                      text text-left text-lg-right
-                      p-4
-                      px-xl-5
-                      d-flex
-                      align-items-center
-                    "
-                    >
-                      <div class="py-md-5">
-                        <h2 class="mb-4">
-                          Kids <br />
-                          Collection
-                        </h2>
-                        <p class="h5">Call: 0123 456 78901</p>
-                        <p class="h5 mb-4">Email Address: email@info.com</p>
-                        <div class="row justify-content-end">
-                          <div class="col-xl-8">
-                            <p>
-                              Far far away, behind the word mountains, far from
-                              the countries Vokalia and Consonantia, there live
-                              the blind texts. Separated they live in
-                              Bookmarksgrove right at the coast of the
-                              Semantics, a large language ocean.
-                            </p>
-                          </div>
-                        </div>
-                        <p>
-                          <button
-                            type="button"
-                            class="btn btn-outline-dark mb-2 py-3 px-4"
-                          >
-                            Shop the collection Outline
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-dark mb-2 py-3 px-4"
-                          >
-                            Learn More
-                          </button>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work-wrap d-md-flex">
-                    <div
-                      class="img order-md-last carousel-bg3"
-                      
-                    ></div>
-                    <div
-                      class="
-                      text text-left text-lg-right
-                      p-4
-                      px-xl-5
-                      d-flex
-                      align-items-center
-                    "
-                    >
-                      <div class="py-md-5">
-                        <h2 class="mb-4">
-                          Ladies <br />
-                          Collection
-                        </h2>
-                        <p class="h5">Call: 0123 456 78901</p>
-                        <p class="h5 mb-4">Email Address: email@info.com</p>
-                        <div class="row justify-content-end">
-                          <div class="col-xl-8">
-                            <p>
-                              Far far away, behind the word mountains, far from
-                              the countries Vokalia and Consonantia, there live
-                              the blind texts. Separated they live in
-                              Bookmarksgrove right at the coast of the
-                              Semantics, a large language ocean.
-                            </p>
-                          </div>
-                        </div>
-                        <p>
-                          <button
-                            type="button"
-                            class="btn btn-outline-dark mb-2 py-3 px-4"
-                          >
-                            Shop the collection Outline
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-dark mb-2 py-3 px-4"
-                          >
-                            Learn More
-                          </button>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work-wrap d-md-flex">
-                    <div
-                      class="img order-md-last carousel-bg4"
-                      
-                    ></div>
-                    <div
-                      class="
-                      text text-left text-lg-right
-                      p-4
-                      px-xl-5
-                      d-flex
-                      align-items-center
-                    "
-                    >
-                      <div class="py-md-5">
-                        <h2 class="mb-4">
-                          Ladies <br />
-                          Collection
-                        </h2>
-                        <p class="h5">Call: 0123 456 78901</p>
-                        <p class="h5 mb-4">Email Address: email@info.com</p>
-                        <div class="row justify-content-end">
-                          <div class="col-xl-8">
-                            <p>
-                              Far far away, behind the word mountains, far from
-                              the countries Vokalia and Consonantia, there live
-                              the blind texts. Separated they live in
-                              Bookmarksgrove right at the coast of the
-                              Semantics, a large language ocean.
-                            </p>
-                          </div>
-                        </div>
-                        <p>
-                          <button
-                            type="button"
-                            class="btn btn-outline-dark mb-2 py-3 px-4"
-                          >
-                            Shop the collection Outline
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-dark mb-2 py-3 px-4"
-                          >
-                            Learn More
-                          </button>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+      <Carousel className="container">
+        <Carousel.Item className="slider1">
+          <div class="sliderAx h-auto">
+            <div id="slider-1" class="container mx-auto">
+              <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill">
+                <div class="md:w-1/2">
+                  <p class="font-bold text-sm uppercase">Explore The Word</p>
+                  <p class="text-3xl font-bold">Hello world</p>
+                  <p class="text-2xl mb-10 leading-none">
+                    New experiences bring us new knowledge.
+                  </p>
+                  <a
+                    href="#nothing"
+                    class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+                  >
+                    Book Now
+                  </a>
                 </div>
               </div>
+              {/* <!-- container --> */}
+              <br />
             </div>
           </div>
-        </div>
-      </section> */}
-      </div>
+
+          <Carousel.Caption className="text-dark "></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className="slider2">
+          <div class="sliderAx h-auto">
+            <div id="slider-1" class="container mx-auto">
+              <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill">
+                <div class="md:w-1/2">
+                  <p class="font-bold text-sm uppercase">Explore The Word</p>
+                  <p class="text-3xl font-bold">Hello world</p>
+                  <p class="text-2xl mb-10 leading-none">
+                    New experiences bring us new knowledge.
+                  </p>
+                  <a
+                    href="#nothing"
+                    class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+              {/* <!-- container --> */}
+              <br />
+            </div>
+          </div>
+
+          <Carousel.Caption className="text-dark "></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className="slider3">
+          <div class="sliderAx h-auto">
+            <div id="slider-1" class="container mx-auto">
+              <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill">
+                <div class="md:w-1/2">
+                  <p class="font-bold text-sm uppercase">Explore The Word</p>
+                  <p class="text-3xl font-bold">Hello world</p>
+                  <p class="text-2xl mb-10 leading-none">
+                    New experiences bring us new knowledge.
+                  </p>
+                  <a
+                    href="#nothing"
+                    class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+              {/* <!-- container --> */}
+              <br />
+            </div>
+          </div>
+
+          <Carousel.Caption className="text-dark "></Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </div>
   );
 };

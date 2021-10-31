@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./context/AuthProvider";
+import AllPlaces from "./Pages/AllPlaces/AllPlaces";
 import AllBooking from "./Pages/Booking/AllBooking/AllBooking";
 import ManageBooking from "./Pages/Booking/ManageBooking/ManageBooking";
 import MyBooking from "./Pages/Booking/MyBooking/MyBooking";
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route exact path="/home">
             <Home></Home>
+          </Route>
+          <Route exact path="/allplaces">
+            <AllPlaces></AllPlaces>
           </Route>
           <PrivateRoute exact path="/placeorder/:_id">
             <BookingDetail></BookingDetail>

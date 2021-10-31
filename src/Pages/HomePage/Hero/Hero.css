@@ -1,15 +1,24 @@
-/* .carousel-bg1 {
-  background-image: url("https://i.ibb.co/gJQN2PW/work-2.jpg");
+.slider1 {
+  background-image: url("https://templates.envytheme.com/traip/default/assets/images/destinations/destination-lg-1.jpg");
+  height: 50%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.carousel-bg2 {
-  background-image: url("https://i.ibb.co/gJQN2PW/work-2.jpg");
+.slider2 {
+  background-image: url("https://img.freepik.com/free-photo/vestrahorn-mountains-sunset-stokksnes-iceland_335224-574.jpg?size=338&ext=jpg");
+  height: 50%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.carousel-bg3 {
-  background-image: url("https://i.ibb.co/gJQN2PW/work-2.jpg");
+.slider3 {
+  background-image: url("https://img.freepik.com/free-photo/cascade-boat-clean-china-natural-rural_1417-1356.jpg?size=338&ext=jpg");
+  height: 50%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.carousel-bg4 {
-  background-image: url("https://i.ibb.co/gJQN2PW/work-2.jpg");
-} */
 
 .img-gradient img {
   display: block;

@@ -33,7 +33,7 @@ const Header = () => {
               </Link>
               <Link
                 className="nav-bar text-primary mx-2 text-dark"
-                to="/services"
+                to="/allplaces"
               >
                 Destinations
               </Link>

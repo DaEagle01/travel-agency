@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const SinglePlace = (props) => {
-  const { img, name, detail, description, price , _id} = props.place;
+  const { img, name, detail, description, price, _id } = props.place;
 
   return (
     <div>
@@ -14,7 +14,12 @@ const SinglePlace = (props) => {
               <div>
                 <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
                   <div>
-                    <img class="w-full" src={img} alt="images given" />
+                    <img
+                      class="w-full p-1"
+                      style={{ height: "250px" }}
+                      src={img}
+                      alt="images given"
+                    />
                     <div class="px-4 py-2">
                       {/* <h1 class="text-xl font-gray-700 font-bold">
                         Papież gigant
@@ -47,15 +52,22 @@ const SinglePlace = (props) => {
                         </h3>
                       </div>
                       <p class="text-sm tracking-normal">{detail}</p>
+                      <h6>
+                        Price: <span className="fs-4">${price}</span> / person{" "}
+                        &nbsp;
+                      </h6>
 
-                      <Link to={`/placeorder/${_id}`}><button class="mt-3 w-full text-center bg-yellow-400 py-2 fw-bold rounded-lg">
-                        Book Now
-                      </button></Link>
+                      <Link to={`/placeorder/${_id}`}>
+                        <button class="mt-3 w-full text-center bg-yellow-400 py-2 fw-bold rounded-lg">
+                          Book Now
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
