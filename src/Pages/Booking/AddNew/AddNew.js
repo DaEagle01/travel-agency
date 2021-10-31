@@ -24,7 +24,7 @@ const AddNew = () => {
       <div className="add-service">
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
-            {...register("placename")}
+            {...register("name")}
             placeholder="Place Name"
             className="border border-dark rounded-3 p-1"
           />
