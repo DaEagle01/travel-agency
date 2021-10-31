@@ -1,11 +1,13 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./context/AuthProvider";
+import About from "./Pages/AboutUs/About";
 import AllPlaces from "./Pages/AllPlaces/AllPlaces";
 import AllBooking from "./Pages/Booking/AllBooking/AllBooking";
 import ManageBooking from "./Pages/Booking/ManageBooking/ManageBooking";
 import MyBooking from "./Pages/Booking/MyBooking/MyBooking";
 import BookingDetail from "./Pages/BookingDetail/BookingDetail";
+import Contact from "./Pages/ContactUs/Contact";
 import Footer from "./Pages/HomePage/Footer/Footer";
 import Header from "./Pages/HomePage/Header/Header";
 import Home from "./Pages/HomePage/Home/Home";
@@ -41,6 +43,12 @@ function App() {
           </Route>
           <Route exact path="/login">
             <Login></Login>
+          </Route>
+          <Route exact path="/about">
+            <About></About>
+          </Route>
+          <Route exact path="/contact">
+            <Contact></Contact>
           </Route>
         </Switch>
         <Footer></Footer>
