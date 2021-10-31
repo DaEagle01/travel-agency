@@ -12,6 +12,7 @@ import Footer from "./Pages/HomePage/Footer/Footer";
 import Header from "./Pages/HomePage/Header/Header";
 import Home from "./Pages/HomePage/Home/Home";
 import Login from "./Pages/Login/Login";
+import NotFound from "./Pages/NotFound/NotFound";
 import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact></Contact>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>
