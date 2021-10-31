@@ -11,7 +11,7 @@ const BookingDetail = () => {
   const [bookPlace, setBookPlace] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/places/${_id}`)
+    fetch(`https://aqueous-lowlands-11333.herokuapp.com/places/${_id}`)
       .then((res) => res.json())
       .then((data) => setBookPlace(data));
   }, []);
@@ -25,7 +25,7 @@ const BookingDetail = () => {
     data.status = "pending";
     console.log(data);
 
-    fetch(`http://localhost:5000/places/${_id}`, {
+    fetch(`https://aqueous-lowlands-11333.herokuapp.com/places/${_id}`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

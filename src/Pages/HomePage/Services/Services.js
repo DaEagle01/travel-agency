@@ -8,7 +8,7 @@ import { Row } from "react-bootstrap";
 const Services = () => {
   const [places, setPlaces] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/places")
+    fetch("https://aqueous-lowlands-11333.herokuapp.com/places")
       .then((res) => res.json())
       .then((data) => setPlaces(data));
   }, []);

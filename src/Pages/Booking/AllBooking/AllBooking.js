@@ -6,14 +6,14 @@ const AllBooking = () => {
   const [status, setStatus] = useState("Pending");
 
   useEffect(() => {
-    fetch("http://localhost:5000/allusers")
+    fetch("https://aqueous-lowlands-11333.herokuapp.com/allusers")
       .then((res) => res.json())
       .then((data) => setAllUser(data));
   }, []);
 
   const handleDelete = (_id) => {
     if (window.confirm("Are you sure you want to delete it?")) {
-      fetch(`http://localhost:5000/allusers/${_id}`, {
+      fetch(`https://aqueous-lowlands-11333.herokuapp.com/allusers/${_id}`, {
         method: "DELETE",
         headers: { "content-type": "application/json" },
       })
@@ -24,7 +24,7 @@ const AllBooking = () => {
 
   const handleStatus = (_id, singleUser) => {
     singleUser.status = "Approved";
-    fetch(`http://localhost:5000/allusers/${_id}`, {
+    fetch(`https://aqueous-lowlands-11333.herokuapp.com/allusers/${_id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(singleUser),

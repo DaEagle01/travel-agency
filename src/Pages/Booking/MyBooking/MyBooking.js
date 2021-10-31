@@ -9,7 +9,7 @@ const MyBooking = () => {
   const eMail = user.email;
 
   useEffect(() => {
-    fetch("http://localhost:5000/allusers")
+    fetch("https://aqueous-lowlands-11333.herokuapp.com/allusers")
       .then((res) => res.json())
       .then((data) => setMyBooking(data));
   }, []);
@@ -19,7 +19,7 @@ const MyBooking = () => {
 
   const handleDelete = (_id) => {
     console.log(_id);
-    fetch(`http://localhost:5000/allusers/${_id}`, {
+    fetch(`https://aqueous-lowlands-11333.herokuapp.com/allusers/${_id}`, {
       method: "DELETE",
       headers: { "content-type": "application/json" },
     })
