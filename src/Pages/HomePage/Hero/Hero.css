@@ -1,0 +1,17 @@
+/* .carousel-bg1 {
+  background-image: url("https://i.ibb.co/gJQN2PW/work-2.jpg");
+}
+.carousel-bg2 {
+  background-image: url("https://i.ibb.co/gJQN2PW/work-2.jpg");
+}
+.carousel-bg3 {
+  background-image: url("https://i.ibb.co/gJQN2PW/work-2.jpg");
+}
+.carousel-bg4 {
+  background-image: url("https://i.ibb.co/gJQN2PW/work-2.jpg");
+} */
+
+.img-gradient img {
+  display: block;
+  height: 500px;
+}
