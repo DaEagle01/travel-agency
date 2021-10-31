@@ -26,6 +26,18 @@ const MyBooking = () => {
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
+
+  const handleStatus = (_id, order) => {
+    order.status = "Approved";
+    fetch(`https://aqueous-lowlands-11333.herokuapp.com/allusers/${_id}`, {
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(order),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  };
+
   return (
     <div>
       <h1>MyBooking</h1>
@@ -126,7 +138,14 @@ const MyBooking = () => {
                             aria-hidden="true"
                             class="absolute inset-0 bg-green-200 opacity-50 rounded-full"
                           ></span>
-                          <span class="relative">active</span>
+                          <button
+                            onClick={() =>
+                              handleStatus(order?._id, order)
+                            }
+                            class="relative"
+                          >
+                            {order?.status}
+                          </button>
                         </span>
                       </td>
                       <td class="px-2 py-5 border-b border-gray-200 bg-white text-sm">
