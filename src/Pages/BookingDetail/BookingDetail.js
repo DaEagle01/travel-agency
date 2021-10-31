@@ -52,7 +52,10 @@ const BookingDetail = () => {
           <div>
             <img src={bookPlace.img} alt="" />
           </div>
-          <div>{bookPlace.description}</div>
+          <div className="mt-4 px-4 mb-5">
+            <h3>{bookPlace.name}</h3>
+            {bookPlace.description}
+          </div>
         </div>
         <div className="col-md-6 add-service">
           <h2 className="text-center text-dark mb-4 fw-bold">
