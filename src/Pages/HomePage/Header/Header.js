@@ -65,7 +65,8 @@ const Header = () => {
                 <Link
                   to="/login"
                   onClick={logOut}
-                  className="btn btn-info font-bold"
+                  className="btn   font-bold"
+                  style={{ backgroundColor: "#ff835d", fontWeight: "bold" }}
                 >
                   Logout
                 </Link>

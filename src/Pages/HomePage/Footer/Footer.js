@@ -5,7 +5,10 @@ import { Form } from "react-bootstrap";
 const Footer = () => {
   return (
     <div>
-      <div className="footer pt-4 text-light" style={{ backgroundColor: "#1f2937" }}>
+      <div
+        className="footer pt-4 text-light"
+        style={{ backgroundColor: "#1f2937" }}
+      >
         <div className="container">
           <div className="row py-md-5">
             <div className="col-md-4 ">
@@ -33,9 +36,10 @@ const Footer = () => {
                   <div>
                     <i class="fas fa-map-marker-alt fa-lg-3x fa-2x text-light mb-lg-3"></i>
                   </div>
-                  <div>3 Edgar Buildings, <br /> England BA1 2FJ.</div>
+                  <div>
+                    3 Edgar Buildings, <br /> England BA1 2FJ.
+                  </div>
                 </div>
-               
               </div>
             </div>
             <div className="col-md-2 col-6">
@@ -48,7 +52,10 @@ const Footer = () => {
               <p>Contact us</p>
             </div>
             <div className="col-md-2 col-6">
-              <h4 className=" fw-bold text-light mb-lg-3"> Service Categories</h4>
+              <h4 className=" fw-bold text-light mb-lg-3">
+                {" "}
+                Service Categories
+              </h4>
               <p>Travel</p>
               <p>Lifestyle</p>
               <p>Fashion</p>
@@ -94,10 +101,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-dark">
-          <p className="text-center p-lg-3 p-2 mt-3">
+          <p className="text-center p-lg-3 p-2 mt-3 mb-0">
             <small>
-              Copyright &copy; 2021 All Rights Reserved,
-              FahadCodes.
+              Copyright &copy; 2021 All Rights Reserved, FahadCodes.
             </small>
           </p>
         </div>

@@ -139,9 +139,7 @@ const MyBooking = () => {
                             class="absolute inset-0 bg-green-200 opacity-50 rounded-full"
                           ></span>
                           <button
-                            onClick={() =>
-                              handleStatus(order?._id, order)
-                            }
+                            onClick={() => handleStatus(order?._id, order)}
                             class="relative"
                           >
                             {order?.status}
