@@ -12,7 +12,7 @@ Live site link: https://awesometour-24c45.web.app/home
 
 ## 🛠 Technology used
 
-HTML , CSS , JavaScript , Bootsrap , React.js
+HTML , CSS , JavaScript , Bootsrap , Tailwind CSS, React.js, React hook form, React icon, Boxicon, Font Awesome. 
 
 ## Additional Info
 

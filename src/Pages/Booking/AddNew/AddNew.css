@@ -7,6 +7,6 @@
 .add-service form input,
 select,
 textarea {
-  width: 40%;
+  width: 80%;
   margin-bottom: 10px;
 }

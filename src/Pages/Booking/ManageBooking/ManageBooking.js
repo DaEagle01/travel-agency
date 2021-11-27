@@ -5,17 +5,19 @@ import MyBooking from "../MyBooking/MyBooking";
 import AllBooking from "../AllBooking/AllBooking";
 import AddNew from "../AddNew/AddNew";
 import useFirebase from "../../../hooks/useFirebase";
+import Sidebar from "../Sidebar/Components/Sidebar";
 
 const ManageBooking = () => {
   const [path, setPath] = useState("allbooking");
   const { user } = useFirebase();
   return (
     <div className="container">
-      <div className="row">
+      <Sidebar></Sidebar>
+      {/* <div className="row">
         <div className="col-md-3">
           <div class="relative bg-white dark:bg-gray-800">
             <div class="flex flex-col sm:flex-row sm:justify-around">
-              <div class="w-72 h-screen">
+              <div class="w-72 h-scree">
                 <div class="flex items-center justify-start mx-6 mt-10">
                   <img
                     class="h-10"
@@ -57,7 +59,7 @@ const ManageBooking = () => {
           {path === "allbooking" && <AllBooking></AllBooking>}
           {path === "adddestination" && <AddNew></AddNew>}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

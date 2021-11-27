@@ -4,6 +4,7 @@ import Hero from "../Hero/Hero";
 import Services from "../Services/Services";
 import Subscribe from "../Subscribe/Subscribe";
 import Testimonial from "../Testimonial/Testimonial";
+import Sidebar from "../../Booking/Sidebar/Components/Sidebar";
 
 const Home = () => {
   return (

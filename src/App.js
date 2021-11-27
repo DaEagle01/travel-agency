@@ -3,6 +3,7 @@ import "./App.css";
 import AuthProvider from "./context/AuthProvider";
 import About from "./Pages/AboutUs/About";
 import AllPlaces from "./Pages/AllPlaces/AllPlaces";
+import AddNew from "./Pages/Booking/AddNew/AddNew";
 import AllBooking from "./Pages/Booking/AllBooking/AllBooking";
 import ManageBooking from "./Pages/Booking/ManageBooking/ManageBooking";
 import MyBooking from "./Pages/Booking/MyBooking/MyBooking";
@@ -24,31 +25,34 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route exact path="/home">
+          <Route path="/home">
             <Home></Home>
           </Route>
-          <Route exact path="/allplaces">
+          <Route path="/allplaces">
             <AllPlaces></AllPlaces>
           </Route>
-          <PrivateRoute exact path="/placeorder/:_id">
+          <PrivateRoute path="/placeorder/:_id">
             <BookingDetail></BookingDetail>
           </PrivateRoute>
-          <Route exact path="/managebooking">
+          <Route path="/managebooking">
             <ManageBooking></ManageBooking>
           </Route>
-          <Route exact path="/mybooking">
+          <Route path="/mybooking">
             <MyBooking></MyBooking>
           </Route>
-          <Route exact path="/allbooking">
+          <Route path="/allbooking">
             <AllBooking></AllBooking>
           </Route>
-          <Route exact path="/login">
+          <Route path="/addnew">
+            <AddNew></AddNew>
+          </Route>
+          <Route path="/login">
             <Login></Login>
           </Route>
-          <Route exact path="/about">
+          <Route path="/about">
             <About></About>
           </Route>
-          <Route exact path="/contact">
+          <Route path="/contact">
             <Contact></Contact>
           </Route>
           <Route path="*">
